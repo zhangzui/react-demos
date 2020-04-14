@@ -8,6 +8,20 @@
   </head>
   <body>
     <div id="example"></div>
+    <pre class="shiki" style="background-color: #fff">
+        var names = ['Alice', 'Emily', 'Kate'];
+        ReactDOM.render(
+          <div>
+          {
+            names.map(function (name, index) {
+              return <div key={index}>Hello, {name}!</div>
+            })
+          }
+          </div>,
+          document.getElementById('example')
+        );
+    </pre>
+
     <script type="text/babel">
       var names = ['Alice', 'Emily', 'Kate'];
 
